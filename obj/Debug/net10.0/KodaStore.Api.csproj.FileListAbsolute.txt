@@ -68,3 +68,7 @@ C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 4\WEEK 4\DOTNET2\src\Koda
 C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 4\WEEK 4\DOTNET2\src\KodaStore.Api\obj\Debug\net10.0\KodaStore.Api.RazorAssemblyInfo.cs
 C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 4\WEEK 4\DOTNET2\src\KodaStore.Api\bin\Debug\net10.0\KodaStore.Api.staticwebassets.runtime.json
 C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 4\WEEK 4\DOTNET2\src\KodaStore.Api\obj\Debug\net10.0\compressed\1buuzemsvb-{0}-5ipweew5fc-5ipweew5fc.gz
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 4\WEEK 4\DOTNET2\src\KodaStore.Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 4\WEEK 4\DOTNET2\src\KodaStore.Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 4\WEEK 4\DOTNET2\src\KodaStore.Api\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\User01\Documents\_DATA D\Batch 1\Example\WEEK 4\WEEK 4\DOTNET2\src\KodaStore.Api\bin\Debug\net10.0\Scalar.AspNetCore.dll

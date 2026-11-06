@@ -1,4 +1,5 @@
 using KodaStore.Api.Data;
+using Scalar.AspNetCore;
 using KodaStore.Api.Files;
 using KodaStore.Api.Middlewares;
 using KodaStore.Api.Repositories;
@@ -40,6 +41,18 @@ app.UseExceptionHandler();
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+
+    app.MapScalarApiReference();
+
+    app.UseSwaggerUI(options => // UseSwaggerUI is called only in Development.
+    {
+        options.SwaggerEndpoint("/openapi/v1.json", "Koda Store API v1");
+        options.RoutePrefix = "swagger";
+
+        options.DocumentTitle = "Koda Store | API Documentation";
+
+        options.EnableFilter();
+    });
 }
 
 app.UseHttpsRedirection();
