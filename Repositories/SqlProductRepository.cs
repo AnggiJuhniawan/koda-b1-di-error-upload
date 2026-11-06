@@ -86,11 +86,6 @@ public sealed class SqlProductRepository : IProductRepository
         {
             return false;
         }
-        catch (SqlException e)
-        {
-            Console.WriteLine($"SQL Error tidak terduga: {e.Number} - {e.Message}");
-            return false;
-        }
     }
 
     public async Task<bool> TryDeleteAsync(string productCode, CancellationToken cancellationToken)

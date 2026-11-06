@@ -22,6 +22,8 @@ public sealed class ProductController : ControllerBase
     [HttpGet]
     [ProducesResponseType(
         typeof(IReadOnlyList<ProductResponse>), StatusCodes.Status200OK)]
+    [ProducesResponseType(
+        typeof(IReadOnlyList<ProductResponse>), StatusCodes.Status404NotFound)]
     public async Task<ActionResult<IReadOnlyList<Product>>> GetAll(CancellationToken cancellationToken)
     {
         var products = await _service.GetAllAsync(cancellationToken);
@@ -41,7 +43,8 @@ public sealed class ProductController : ControllerBase
     // HTTPPOST
     [HttpPost]
     [ProducesResponseType(typeof(ProductResponse), StatusCodes.Status201Created)]
-    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status404NotFound)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status409Conflict)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
     public async Task<ActionResult<ProductResponse>> Create([FromBody] ProductRequest request, CancellationToken cancellationToken)
     {
         try
